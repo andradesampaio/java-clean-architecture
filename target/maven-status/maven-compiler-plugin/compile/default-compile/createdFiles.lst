@@ -1,0 +1,7 @@
+br\org\school\model\CPF.class
+br\org\school\model\Student.class
+br\org\school\SchoolApplication.class
+br\org\school\model\Phone.class
+br\org\school\model\StudentFactory.class
+br\org\school\model\Indication.class
+br\org\school\model\Email.class
