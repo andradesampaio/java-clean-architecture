@@ -1,20 +1,8 @@
 language: java
-sudo: true
-dist: trusty
-jdk: oraclejdk11
-addons:
-  apt:
-    packages:
-      - oracle-java11-installer
-before_install:
-  - chmod +x mvnw
-
-cache:
-  directories:
-    - $HOME/.m2
-
-script:
-  - java --version
-  - ./mvnw clean install
-  - ./mvnw test
+sudo: false
+dist: xenial
+jdk:
+ - openjdk11
+ 
+after_success:
   - bash <(curl -s https://codecov.io/bash)
