@@ -1,12 +1,13 @@
-version: ~> 1.0
-
-os: linux
-dist: xenial
-arch: amd64
 language: java
-
-jdk:
-  - oraclejdk11
+sudo: true
+dist: trusty
+jdk: oraclejdk11
+addons:
+  apt:
+    packages:
+      - oracle-java11-installer
+before_install:
+  - chmod +x mvnw
 
 cache:
   directories:
