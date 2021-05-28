@@ -1,8 +1,11 @@
 language: java
-sudo: false
+sudo: true
 dist: xenial
 jdk:
  - openjdk11
  
+before_install:
+  - chmod +x mvnw
+  
 after_success:
   - bash <(curl -s https://codecov.io/bash)
