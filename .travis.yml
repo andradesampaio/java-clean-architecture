@@ -11,6 +11,5 @@ cache:
 before_install:
   - chmod +x mvnw
   
-script:
-  - ./mvnw clean install
+after_success:
   - bash <(curl -s https://codecov.io/bash)
