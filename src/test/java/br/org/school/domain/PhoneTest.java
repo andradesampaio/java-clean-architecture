@@ -1,5 +1,6 @@
 package br.org.school.domain;
 
+import br.org.school.domain.student.Phone;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -34,9 +35,9 @@ public class PhoneTest {
     @Test
     void shouldCreatePhoneWithValidDDDAndNumber() {
         String ddd = "11";
-        String numero = "123456789";
-        Phone telefone = new Phone(ddd, numero);
-        assertEquals(ddd, telefone.getDdd());
-        assertEquals(numero, telefone.getNumber());
+        String number = "123456789";
+        Phone phone = new Phone(ddd, number);
+        assertEquals(ddd, phone.getDdd());
+        assertEquals(number, phone.getNumber());
     }
 }

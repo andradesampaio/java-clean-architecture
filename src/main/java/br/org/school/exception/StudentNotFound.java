@@ -1,0 +1,9 @@
+package br.org.school.exception;
+
+import br.org.school.domain.student.CPF;
+
+public class StudentNotFound extends RuntimeException{
+    public StudentNotFound(CPF cpf){
+        super("Student not found with CPF: " + cpf.getDocumentNumber());
+    }
+}

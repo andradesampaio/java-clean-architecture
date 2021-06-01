@@ -1,4 +1,6 @@
-package br.org.school.domain;
+package br.org.school.domain.indication;
+
+import br.org.school.domain.student.Student;
 
 import java.time.LocalDateTime;
 

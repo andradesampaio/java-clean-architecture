@@ -1,4 +1,4 @@
-package br.org.school.domain;
+package br.org.school.domain.student;
 import java.util.ArrayList;
 import java.util.List;
 
